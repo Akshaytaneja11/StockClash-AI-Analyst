@@ -47,7 +47,7 @@ def get_stock_info(ticker_symbol):
 def get_ai_analysis(data1, data2, api_key):
     """Sends structured data to Gemini for comparison"""
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     prompt = f"""
     Act as a Senior Financial Analyst. Compare these two companies based on the data provided:
